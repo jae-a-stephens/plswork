@@ -1,0 +1,93 @@
+body {
+ background-color: darkkhaki;
+ margin: auto;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    
+  }
+  
+.myName {
+  font-family: Arial;
+  font-size: 25px;
+  padding: 10px;
+  width: 25%;
+  display: flex;
+  justify-content: start;
+}
+
+.middlenav {
+  width: 50%;
+  display: flex;
+  display: flex;
+  justify-content: start;
+}
+
+.nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.nav {
+  width: 25%;
+  display: flex;
+  justify-content: end;
+}
+
+.grid1 {
+  display: grid;
+  height: 164px;
+  width: 926px;
+  margin: auto;
+  margin-top: 141px;
+  background-color: rgb(255, 255, 255);
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "name aboutme"
+  "job aboutme";
+}
+
+.name {
+  grid-area: name;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.jobName {
+  grid-area: job;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.introMe {
+  grid-area: aboutme;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  display: flex;
+  line-height: 15px;
+  align-items: center;
+}
+
+.greyText {
+  color: rgba(117, 117, 117, 1);
+}
