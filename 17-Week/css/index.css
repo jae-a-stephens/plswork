@@ -104,6 +104,7 @@ header {
 }
 
 .avatar {
+  grid-area: empty;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -183,8 +184,8 @@ footer {
 .grid2 {
   display: grid;
   margin-top: 42px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   border-radius: 6px;
   height: 355px;
   background-color: rgb(211, 211, 211);
