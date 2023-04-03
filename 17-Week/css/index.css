@@ -1,5 +1,5 @@
 body {
- background-color: darkkhaki;
+ background-color: rgb(255, 251, 197);
  margin: auto;
 }
 
@@ -42,8 +42,8 @@ header {
   border-radius: 6px;
   display: grid;
   height: 164px;
-  
-  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 141px;
   background-color: rgb(255, 255, 255);
   grid-template-columns: 35% 30% 35%;
@@ -95,8 +95,8 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   padding: 10px;
-  color: black;
-  background-color: bisque;
+  color: rgb(255, 255, 255);
+  background-color: rgb(148, 182, 255);
   border-radius: 6px;
   width: fit-content;
   height: fit-content; 
@@ -124,3 +124,140 @@ header {
   color: rgba(117, 117, 117, 1);
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "footerNote1 footerLinks"
+  "footerNote2 footerLinks";
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.footerNote1 {
+  grid-area: footerNote1;
+  display:flex;
+  justify-content: start;
+}
+
+.footerNote1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  margin: 0;
+}
+
+.footerLinks {
+  grid-area: footerLinks;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footerLinks a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.footerNote2 {
+  grid-area: footerNote2;
+  display:flex;
+  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.footerNote2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+.grid2 {
+  display: grid;
+  margin-top: 42px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 6px;
+  height: 355px;
+  background-color: rgb(211, 211, 211);
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 75% 12.5% 12.5%;
+  grid-template-areas: 
+  "image image image"
+  "title description arrow"
+  "role description arrow";
+}
+
+.LLHero {
+  grid-area: image;
+}
+
+.LLhero img {
+  object-fit: cover;
+}
+
+.LLTitle {
+  grid-area: title;
+  display: flex;
+  align-items: end;
+}
+
+.LLTitle p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.LLSubTitle {
+  grid-area: role;
+  display: flex;
+  align-items: start;
+}
+
+.LLSubTitle p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.LLDescription {
+  grid-area: description;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LLDescription p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+.arrow {
+  grid-area: arrow;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.arrow a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+}
