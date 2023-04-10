@@ -308,13 +308,13 @@ h4 {
 
 .skillsImage {
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .skillsImage img {
   height: 164px;
-width: 164px;
-object-fit: cover;
+  width: 164px;
+    object-fit: cover;
 border-radius: 50%;
 }
 
