@@ -6,6 +6,7 @@
   justify-items: center;
   font-family: helvetica, arial, sans-serif;
   color: white;
+  font-size: large;
   grid-template-areas:
   "hover"
   "disabled"
@@ -14,21 +15,35 @@
 }
 .hoverMe {
   grid-area: hover;
-  background-color: red;
+  background-color: rgb(55, 0, 255);
   color: white;
-  width: 150px;
+  width: fit-content;
   text-align: center;
-  height: 50px;
+  height: fit-content;
+  padding: 10px;
   /* Add the css property transition here! 
     transition: 0.3s; 
   */
-
+  transition: all 400ms ease-in-out;
+  border-radius: 100px;
 }
 /* active state */
 .hoverMe:hover {
   /* Add your hover state css here.
     background-color:blue;
   */
-
   
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  height: fit-content;
+  font-size: xx-large;
+  padding: 30px;
+  filter: drop-shadow(10px 5px 10px #2b2b2b);
+  border-radius: 100px;
+  text-transform: uppercase;
+  background-image: url(https://media.tenor.com/VvRTu2KyfyUAAAAd/kanye-face.gif);
+  background-position: center;
+  background-size: cover;
+  
+
 }

@@ -38,7 +38,7 @@ transform: rotate(45deg) scale(.75);
     (this will increase the size of the red square).
       Try out scaling along the x- and y-axes using scaleX() and scaleY() or the shorthand of scale(x,y).
   */
-transform: scale(2,3) translate(25%, 60%);
+transform: scale(2,3);
 
 }
 .translate {
